@@ -25,7 +25,7 @@ do
         set -f
         IFS=,
         array=($OPTARG)
-        kflash -p ${array[0]} ./build/${array[1]}/${array[1]}.bin
+        sudo kflash -p ${array[0]} ./build/${array[1]}/${array[1]}.bin
         ;;
         t)
         miniterm $OPTARG 115200 --rts 0 --dtr 0
